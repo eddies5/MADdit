@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDD282F018E25B7A0095EA8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD282EF18E25B7A0095EA8E /* Foundation.framework */; };
+		DDD282F218E25B7A0095EA8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD282F118E25B7A0095EA8E /* CoreGraphics.framework */; };
+		DDD282F418E25B7A0095EA8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD282F318E25B7A0095EA8E /* UIKit.framework */; };
+		DDD282FA18E25B7A0095EA8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDD282F818E25B7A0095EA8E /* InfoPlist.strings */; };
+		DDD282FC18E25B7A0095EA8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD282FB18E25B7A0095EA8E /* main.m */; };
+		DDD2830018E25B7A0095EA8E /* MADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD282FF18E25B7A0095EA8E /* MADAppDelegate.m */; };
+		DDD2830218E25B7A0095EA8E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD2830118E25B7A0095EA8E /* Images.xcassets */; };
+		DDD2830918E25B7A0095EA8E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD2830818E25B7A0095EA8E /* XCTest.framework */; };
+		DDD2830A18E25B7A0095EA8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD282EF18E25B7A0095EA8E /* Foundation.framework */; };
+		DDD2830B18E25B7A0095EA8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD282F318E25B7A0095EA8E /* UIKit.framework */; };
+		DDD2831318E25B7A0095EA8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDD2831118E25B7A0095EA8E /* InfoPlist.strings */; };
+		DDD2831518E25B7A0095EA8E /* MADditTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD2831418E25B7A0095EA8E /* MADditTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDD2830C18E25B7A0095EA8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDD282E418E25B7A0095EA8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDD282EB18E25B7A0095EA8E;
+			remoteInfo = MADdit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDD282EC18E25B7A0095EA8E /* MADdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MADdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD282EF18E25B7A0095EA8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DDD282F118E25B7A0095EA8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DDD282F318E25B7A0095EA8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DDD282F718E25B7A0095EA8E /* MADdit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MADdit-Info.plist"; sourceTree = "<group>"; };
+		DDD282F918E25B7A0095EA8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDD282FB18E25B7A0095EA8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDD282FD18E25B7A0095EA8E /* MADdit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MADdit-Prefix.pch"; sourceTree = "<group>"; };
+		DDD282FE18E25B7A0095EA8E /* MADAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADAppDelegate.h; sourceTree = "<group>"; };
+		DDD282FF18E25B7A0095EA8E /* MADAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADAppDelegate.m; sourceTree = "<group>"; };
+		DDD2830118E25B7A0095EA8E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DDD2830718E25B7A0095EA8E /* MADditTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MADditTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD2830818E25B7A0095EA8E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DDD2831018E25B7A0095EA8E /* MADditTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MADditTests-Info.plist"; sourceTree = "<group>"; };
+		DDD2831218E25B7A0095EA8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDD2831418E25B7A0095EA8E /* MADditTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADditTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDD282E918E25B7A0095EA8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD282F218E25B7A0095EA8E /* CoreGraphics.framework in Frameworks */,
+				DDD282F418E25B7A0095EA8E /* UIKit.framework in Frameworks */,
+				DDD282F018E25B7A0095EA8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD2830418E25B7A0095EA8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD2830918E25B7A0095EA8E /* XCTest.framework in Frameworks */,
+				DDD2830B18E25B7A0095EA8E /* UIKit.framework in Frameworks */,
+				DDD2830A18E25B7A0095EA8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDD282E318E25B7A0095EA8E = {
+			isa = PBXGroup;
+			children = (
+				DDD282F518E25B7A0095EA8E /* MADdit */,
+				DDD2830E18E25B7A0095EA8E /* MADditTests */,
+				DDD282EE18E25B7A0095EA8E /* Frameworks */,
+				DDD282ED18E25B7A0095EA8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDD282ED18E25B7A0095EA8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDD282EC18E25B7A0095EA8E /* MADdit.app */,
+				DDD2830718E25B7A0095EA8E /* MADditTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDD282EE18E25B7A0095EA8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDD282EF18E25B7A0095EA8E /* Foundation.framework */,
+				DDD282F118E25B7A0095EA8E /* CoreGraphics.framework */,
+				DDD282F318E25B7A0095EA8E /* UIKit.framework */,
+				DDD2830818E25B7A0095EA8E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDD282F518E25B7A0095EA8E /* MADdit */ = {
+			isa = PBXGroup;
+			children = (
+				DDD282FE18E25B7A0095EA8E /* MADAppDelegate.h */,
+				DDD282FF18E25B7A0095EA8E /* MADAppDelegate.m */,
+				DDD2830118E25B7A0095EA8E /* Images.xcassets */,
+				DDD282F618E25B7A0095EA8E /* Supporting Files */,
+			);
+			path = MADdit;
+			sourceTree = "<group>";
+		};
+		DDD282F618E25B7A0095EA8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDD282F718E25B7A0095EA8E /* MADdit-Info.plist */,
+				DDD282F818E25B7A0095EA8E /* InfoPlist.strings */,
+				DDD282FB18E25B7A0095EA8E /* main.m */,
+				DDD282FD18E25B7A0095EA8E /* MADdit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDD2830E18E25B7A0095EA8E /* MADditTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDD2831418E25B7A0095EA8E /* MADditTests.m */,
+				DDD2830F18E25B7A0095EA8E /* Supporting Files */,
+			);
+			path = MADditTests;
+			sourceTree = "<group>";
+		};
+		DDD2830F18E25B7A0095EA8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDD2831018E25B7A0095EA8E /* MADditTests-Info.plist */,
+				DDD2831118E25B7A0095EA8E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDD282EB18E25B7A0095EA8E /* MADdit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD2831818E25B7A0095EA8E /* Build configuration list for PBXNativeTarget "MADdit" */;
+			buildPhases = (
+				DDD282E818E25B7A0095EA8E /* Sources */,
+				DDD282E918E25B7A0095EA8E /* Frameworks */,
+				DDD282EA18E25B7A0095EA8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MADdit;
+			productName = MADdit;
+			productReference = DDD282EC18E25B7A0095EA8E /* MADdit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDD2830618E25B7A0095EA8E /* MADditTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD2831B18E25B7A0095EA8E /* Build configuration list for PBXNativeTarget "MADditTests" */;
+			buildPhases = (
+				DDD2830318E25B7A0095EA8E /* Sources */,
+				DDD2830418E25B7A0095EA8E /* Frameworks */,
+				DDD2830518E25B7A0095EA8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDD2830D18E25B7A0095EA8E /* PBXTargetDependency */,
+			);
+			name = MADditTests;
+			productName = MADditTests;
+			productReference = DDD2830718E25B7A0095EA8E /* MADditTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDD282E418E25B7A0095EA8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MAD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Comyar Zaheri";
+				TargetAttributes = {
+					DDD2830618E25B7A0095EA8E = {
+						TestTargetID = DDD282EB18E25B7A0095EA8E;
+					};
+				};
+			};
+			buildConfigurationList = DDD282E718E25B7A0095EA8E /* Build configuration list for PBXProject "MADdit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DDD282E318E25B7A0095EA8E;
+			productRefGroup = DDD282ED18E25B7A0095EA8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDD282EB18E25B7A0095EA8E /* MADdit */,
+				DDD2830618E25B7A0095EA8E /* MADditTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDD282EA18E25B7A0095EA8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD282FA18E25B7A0095EA8E /* InfoPlist.strings in Resources */,
+				DDD2830218E25B7A0095EA8E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD2830518E25B7A0095EA8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD2831318E25B7A0095EA8E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDD282E818E25B7A0095EA8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD282FC18E25B7A0095EA8E /* main.m in Sources */,
+				DDD2830018E25B7A0095EA8E /* MADAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD2830318E25B7A0095EA8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD2831518E25B7A0095EA8E /* MADditTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDD2830D18E25B7A0095EA8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDD282EB18E25B7A0095EA8E /* MADdit */;
+			targetProxy = DDD2830C18E25B7A0095EA8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDD282F818E25B7A0095EA8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD282F918E25B7A0095EA8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DDD2831118E25B7A0095EA8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD2831218E25B7A0095EA8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDD2831618E25B7A0095EA8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DDD2831718E25B7A0095EA8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDD2831918E25B7A0095EA8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MADdit/MADdit-Prefix.pch";
+				INFOPLIST_FILE = "MADdit/MADdit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DDD2831A18E25B7A0095EA8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MADdit/MADdit-Prefix.pch";
+				INFOPLIST_FILE = "MADdit/MADdit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DDD2831C18E25B7A0095EA8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MADdit.app/MADdit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MADdit/MADdit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MADditTests/MADditTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DDD2831D18E25B7A0095EA8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MADdit.app/MADdit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MADdit/MADdit-Prefix.pch";
+				INFOPLIST_FILE = "MADditTests/MADditTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDD282E718E25B7A0095EA8E /* Build configuration list for PBXProject "MADdit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD2831618E25B7A0095EA8E /* Debug */,
+				DDD2831718E25B7A0095EA8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD2831818E25B7A0095EA8E /* Build configuration list for PBXNativeTarget "MADdit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD2831918E25B7A0095EA8E /* Debug */,
+				DDD2831A18E25B7A0095EA8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DDD2831B18E25B7A0095EA8E /* Build configuration list for PBXNativeTarget "MADditTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD2831C18E25B7A0095EA8E /* Debug */,
+				DDD2831D18E25B7A0095EA8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDD282E418E25B7A0095EA8E /* Project object */;
+}
