@@ -89,6 +89,7 @@
 				061A9CE218E3C7DF005F5440 /* MADPostCollection.m */,
 			);
 			name = Models;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		061A9CDA18E3C219005F5440 /* ViewControllers */ = {
@@ -96,13 +97,12 @@
 			children = (
 			);
 			name = ViewControllers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		DDD282E318E25B7A0095EA8E = {
 			isa = PBXGroup;
 			children = (
-				061A9CDA18E3C219005F5440 /* ViewControllers */,
-				061A9CD918E3C20D005F5440 /* Models */,
 				DDD282F518E25B7A0095EA8E /* MADdit */,
 				DDD2830E18E25B7A0095EA8E /* MADditTests */,
 				DDD282EE18E25B7A0095EA8E /* Frameworks */,
@@ -133,6 +133,8 @@
 		DDD282F518E25B7A0095EA8E /* MADdit */ = {
 			isa = PBXGroup;
 			children = (
+				061A9CDA18E3C219005F5440 /* ViewControllers */,
+				061A9CD918E3C20D005F5440 /* Models */,
 				DDD282FE18E25B7A0095EA8E /* MADAppDelegate.h */,
 				DDD282FF18E25B7A0095EA8E /* MADAppDelegate.m */,
 				DDD2830118E25B7A0095EA8E /* Images.xcassets */,
