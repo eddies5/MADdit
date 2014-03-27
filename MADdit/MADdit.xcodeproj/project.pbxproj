@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061A9CE018E3C7B4005F5440 /* MADPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 061A9CDF18E3C7B4005F5440 /* MADPost.m */; };
+		061A9CE318E3C7DF005F5440 /* MADPostCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 061A9CE218E3C7DF005F5440 /* MADPostCollection.m */; };
 		DDD282F018E25B7A0095EA8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD282EF18E25B7A0095EA8E /* Foundation.framework */; };
 		DDD282F218E25B7A0095EA8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD282F118E25B7A0095EA8E /* CoreGraphics.framework */; };
 		DDD282F418E25B7A0095EA8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD282F318E25B7A0095EA8E /* UIKit.framework */; };
@@ -32,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		061A9CDE18E3C7B4005F5440 /* MADPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADPost.h; path = MADdit/MADPost.h; sourceTree = "<group>"; };
+		061A9CDF18E3C7B4005F5440 /* MADPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADPost.m; path = MADdit/MADPost.m; sourceTree = "<group>"; };
+		061A9CE118E3C7DF005F5440 /* MADPostCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADPostCollection.h; path = MADdit/MADPostCollection.h; sourceTree = "<group>"; };
+		061A9CE218E3C7DF005F5440 /* MADPostCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADPostCollection.m; path = MADdit/MADPostCollection.m; sourceTree = "<group>"; };
 		DDD282EC18E25B7A0095EA8E /* MADdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MADdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD282EF18E25B7A0095EA8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DDD282F118E25B7A0095EA8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,9 +80,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		061A9CD918E3C20D005F5440 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				061A9CDE18E3C7B4005F5440 /* MADPost.h */,
+				061A9CDF18E3C7B4005F5440 /* MADPost.m */,
+				061A9CE118E3C7DF005F5440 /* MADPostCollection.h */,
+				061A9CE218E3C7DF005F5440 /* MADPostCollection.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		061A9CDA18E3C219005F5440 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		DDD282E318E25B7A0095EA8E = {
 			isa = PBXGroup;
 			children = (
+				061A9CDA18E3C219005F5440 /* ViewControllers */,
+				061A9CD918E3C20D005F5440 /* Models */,
 				DDD282F518E25B7A0095EA8E /* MADdit */,
 				DDD2830E18E25B7A0095EA8E /* MADditTests */,
 				DDD282EE18E25B7A0095EA8E /* Frameworks */,
@@ -242,6 +268,8 @@
 			files = (
 				DDD282FC18E25B7A0095EA8E /* main.m in Sources */,
 				DDD2830018E25B7A0095EA8E /* MADAppDelegate.m in Sources */,
+				061A9CE318E3C7DF005F5440 /* MADPostCollection.m in Sources */,
+				061A9CE018E3C7B4005F5440 /* MADPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +466,7 @@
 				DDD2831A18E25B7A0095EA8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDD2831B18E25B7A0095EA8E /* Build configuration list for PBXNativeTarget "MADditTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +475,7 @@
 				DDD2831D18E25B7A0095EA8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
