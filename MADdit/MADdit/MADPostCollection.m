@@ -21,7 +21,18 @@ static NSString* defaultQuery = @"all";
     if (self) {
         self.query = aQuery;
     }
+    [self makeRequest];
     return self;
+}
+
+- (void)makeRequest {
+    NSString* urlString = [NSString stringWithFormat:@"http://reddit.com/r/%@.json", self.query];
+    NSURL* url = [NSURL URLWithString:urlString];
+    NSURLRequest* request = [NSURLRequest requestWithURL:url];
+    NSURLResponse* response = nil;
+    NSError* error = nil;
+    NSData* data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    NSData* jsonData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONWritingPrettyPrinted error:&error];
 }
 
 @end

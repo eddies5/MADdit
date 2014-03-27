@@ -11,7 +11,7 @@
 @interface MADPostCollection : NSObject
 
 @property (strong, nonatomic) NSString* query;
-@property (strong, nonatomic) NSArray* posts;
+@property (strong, nonatomic) NSMutableArray* posts;
 
 - (id)init;
 - (id)initWithQuery:(NSString* const)aQuery;
