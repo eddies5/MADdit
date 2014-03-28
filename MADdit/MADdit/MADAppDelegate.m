@@ -7,6 +7,7 @@
 //
 
 #import "MADAppDelegate.h"
+#import "MADMainViewController.h"
 
 @implementation MADAppDelegate
 
@@ -15,6 +16,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[MADMainViewController alloc] initWithNibName:nil bundle:nil];
     [self.window makeKeyAndVisible];
     return YES;
 }
