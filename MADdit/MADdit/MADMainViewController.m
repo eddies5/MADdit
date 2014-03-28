@@ -10,6 +10,9 @@
 
 @interface MADMainViewController ()
 
+@property (strong, nonatomic) UITableView* table;
+@property (strong, nonatomic) UITextField* textField;
+
 @end
 
 @implementation MADMainViewController
@@ -19,6 +22,12 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.table = [[UITableView alloc] initWithFrame:CGRectMake(0, 100, 320, CGRectGetHeight(self.view.bounds)) style:UITableViewStylePlain];
+        [self.view addSubview:self.table];
+        
+        self.textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 0, 300, 100)];
+        self.textField.placeholder = @"Subreddit Search";
+        [self.view addSubview:self.textField];
     }
     return self;
 }
