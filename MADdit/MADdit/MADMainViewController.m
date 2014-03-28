@@ -7,6 +7,7 @@
 //
 
 #import "MADMainViewController.h"
+#import "MADPostCollection.h"
 
 @interface MADMainViewController ()
 
@@ -27,9 +28,21 @@
         
         self.textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 0, 300, 100)];
         self.textField.placeholder = @"Subreddit Search";
+        self.textField.delegate = self;
         [self.view addSubview:self.textField];
     }
     return self;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    MADPostCollection* posts = [[MADPostCollection alloc] initWithQuery:textField.text];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (void)viewDidLoad
