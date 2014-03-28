@@ -8,15 +8,17 @@
 
 #import "MADPostCollection.h"
 
-static NSString* defaultQuery = @"all";
+NSString* defaultQuery = @"all";
 
 @implementation MADPostCollection
 
-- (id)init {
+- (id)init
+{
     return [self initWithQuery:defaultQuery];
 }
 
-- (id)initWithQuery:(NSString * const)aQuery {
+- (id)initWithQuery:(NSString *)aQuery
+{
     self = [super init];
     if (self) {
         self.query = aQuery;
@@ -25,8 +27,10 @@ static NSString* defaultQuery = @"all";
     return self;
 }
 
-- (void)makeRequest {
+- (void)makeRequest
+{
     NSString* urlString = [NSString stringWithFormat:@"http://reddit.com/r/%@.json", self.query];
+    NSLog(@"%@", urlString);
     NSURL* url = [NSURL URLWithString:urlString];
     NSURLRequest* request = [NSURLRequest requestWithURL:url];
     NSURLResponse* response = nil;
