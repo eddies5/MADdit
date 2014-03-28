@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		061A9CE018E3C7B4005F5440 /* MADPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 061A9CDF18E3C7B4005F5440 /* MADPost.m */; };
 		061A9CE318E3C7DF005F5440 /* MADPostCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 061A9CE218E3C7DF005F5440 /* MADPostCollection.m */; };
+		0641215318E5B45C00FEEF36 /* MADMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0641215218E5B45C00FEEF36 /* MADMainViewController.m */; };
 		DDD282F018E25B7A0095EA8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD282EF18E25B7A0095EA8E /* Foundation.framework */; };
 		DDD282F218E25B7A0095EA8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD282F118E25B7A0095EA8E /* CoreGraphics.framework */; };
 		DDD282F418E25B7A0095EA8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD282F318E25B7A0095EA8E /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 		061A9CDF18E3C7B4005F5440 /* MADPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADPost.m; path = MADdit/MADPost.m; sourceTree = "<group>"; };
 		061A9CE118E3C7DF005F5440 /* MADPostCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADPostCollection.h; path = MADdit/MADPostCollection.h; sourceTree = "<group>"; };
 		061A9CE218E3C7DF005F5440 /* MADPostCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADPostCollection.m; path = MADdit/MADPostCollection.m; sourceTree = "<group>"; };
+		0641215118E5B45C00FEEF36 /* MADMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADMainViewController.h; path = MADdit/MADMainViewController.h; sourceTree = "<group>"; };
+		0641215218E5B45C00FEEF36 /* MADMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADMainViewController.m; path = MADdit/MADMainViewController.m; sourceTree = "<group>"; };
 		DDD282EC18E25B7A0095EA8E /* MADdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MADdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD282EF18E25B7A0095EA8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DDD282F118E25B7A0095EA8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -95,6 +98,8 @@
 		061A9CDA18E3C219005F5440 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0641215118E5B45C00FEEF36 /* MADMainViewController.h */,
+				0641215218E5B45C00FEEF36 /* MADMainViewController.m */,
 			);
 			name = ViewControllers;
 			path = ..;
@@ -272,6 +277,7 @@
 				DDD2830018E25B7A0095EA8E /* MADAppDelegate.m in Sources */,
 				061A9CE318E3C7DF005F5440 /* MADPostCollection.m in Sources */,
 				061A9CE018E3C7B4005F5440 /* MADPost.m in Sources */,
+				0641215318E5B45C00FEEF36 /* MADMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
