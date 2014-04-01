@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MADMainViewController : UIViewController <UITextFieldDelegate>
+@interface MADMainViewController : UIViewController <UITextFieldDelegate, UITableViewDataSource>
 
 @end

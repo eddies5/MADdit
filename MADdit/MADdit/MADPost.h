@@ -15,4 +15,6 @@
 @property (strong, nonatomic) NSString* author;
 @property (strong, nonatomic) NSString* text;
 
+- (id)initWithData:(NSDictionary *)data;
+
 @end

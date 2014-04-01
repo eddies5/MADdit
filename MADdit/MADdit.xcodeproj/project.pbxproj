@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		061A9CE018E3C7B4005F5440 /* MADPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 061A9CDF18E3C7B4005F5440 /* MADPost.m */; };
-		061A9CE318E3C7DF005F5440 /* MADPostCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 061A9CE218E3C7DF005F5440 /* MADPostCollection.m */; };
 		0641215318E5B45C00FEEF36 /* MADMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0641215218E5B45C00FEEF36 /* MADMainViewController.m */; };
 		DDD282F018E25B7A0095EA8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD282EF18E25B7A0095EA8E /* Foundation.framework */; };
 		DDD282F218E25B7A0095EA8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD282F118E25B7A0095EA8E /* CoreGraphics.framework */; };
@@ -37,8 +36,6 @@
 /* Begin PBXFileReference section */
 		061A9CDE18E3C7B4005F5440 /* MADPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADPost.h; path = MADdit/MADPost.h; sourceTree = "<group>"; };
 		061A9CDF18E3C7B4005F5440 /* MADPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADPost.m; path = MADdit/MADPost.m; sourceTree = "<group>"; };
-		061A9CE118E3C7DF005F5440 /* MADPostCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADPostCollection.h; path = MADdit/MADPostCollection.h; sourceTree = "<group>"; };
-		061A9CE218E3C7DF005F5440 /* MADPostCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADPostCollection.m; path = MADdit/MADPostCollection.m; sourceTree = "<group>"; };
 		0641215118E5B45C00FEEF36 /* MADMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADMainViewController.h; path = MADdit/MADMainViewController.h; sourceTree = "<group>"; };
 		0641215218E5B45C00FEEF36 /* MADMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADMainViewController.m; path = MADdit/MADMainViewController.m; sourceTree = "<group>"; };
 		DDD282EC18E25B7A0095EA8E /* MADdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MADdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,8 +85,6 @@
 			children = (
 				061A9CDE18E3C7B4005F5440 /* MADPost.h */,
 				061A9CDF18E3C7B4005F5440 /* MADPost.m */,
-				061A9CE118E3C7DF005F5440 /* MADPostCollection.h */,
-				061A9CE218E3C7DF005F5440 /* MADPostCollection.m */,
 			);
 			name = Models;
 			path = ..;
@@ -275,7 +270,6 @@
 			files = (
 				DDD282FC18E25B7A0095EA8E /* main.m in Sources */,
 				DDD2830018E25B7A0095EA8E /* MADAppDelegate.m in Sources */,
-				061A9CE318E3C7DF005F5440 /* MADPostCollection.m in Sources */,
 				061A9CE018E3C7B4005F5440 /* MADPost.m in Sources */,
 				0641215318E5B45C00FEEF36 /* MADMainViewController.m in Sources */,
 			);
