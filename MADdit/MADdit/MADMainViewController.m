@@ -24,6 +24,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.madditPosts = [NSMutableArray array];
     }
     return self;
 }
@@ -57,9 +58,9 @@
         [self.madditPosts addObject:[[MADPost alloc]initWithData:d]];
     }
     
-    for (MADPost *p in self.madditPosts) {
-        NSLog(@"%@", p.title);
-    }
+//    for (MADPost *p in self.madditPosts) {
+//        NSLog(@"%@", p.title);
+//    }
     
     [self.table reloadData];
 }
@@ -74,10 +75,11 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MadditCell"];
     if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MadditCell"];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"MadditCell"];
     }
     MADPost *post = self.madditPosts[indexPath.row];
     cell.textLabel.text = post.title;
+    cell.detailTextLabel.text = post.subReddit;
     return cell;
 }
 
@@ -90,7 +92,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.madditPosts = [NSMutableArray array];
     
     self.table = [[UITableView alloc]initWithFrame:CGRectMake(0, 100, 320, CGRectGetHeight(self.view.bounds)) style:UITableViewStylePlain];
     self.table.dataSource = self;
