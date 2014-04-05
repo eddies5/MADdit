@@ -13,10 +13,12 @@
 - (id)initWithData:(NSDictionary *)data
 {
     self = [super init];
-    self.title = [[data objectForKey:@"data"] objectForKey:@"title"];
-    self.subReddit = [[data objectForKey:@"data"] objectForKey:@"subreddit"];
-    self.author = [[data objectForKey:@"data"] objectForKey:@"author"];
-    self.text = [[data objectForKey:@"data"] objectForKey:@"selftext"];
+    self.title = data[@"data"][@"title"];
+    self.subReddit = data[@"data"][@"subreddit"];
+    self.author = data[@"data"][@"author"];
+    self.text = data[@"data"][@"selftext"];
+    self.url = [NSURL URLWithString:data[@"url"]];
+    self.score = (NSInteger) data[@"score"];
     return self;
 }
 

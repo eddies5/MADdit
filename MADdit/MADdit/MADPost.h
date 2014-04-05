@@ -14,6 +14,8 @@
 @property (strong, nonatomic) NSString* subReddit;
 @property (strong, nonatomic) NSString* author;
 @property (strong, nonatomic) NSString* text;
+@property (strong, nonatomic) NSURL* url;
+@property (nonatomic) NSInteger score;
 
 - (id)initWithData:(NSDictionary *)data;
 
