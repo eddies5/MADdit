@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060862B918F0933900454322 /* MADPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 060862B818F0933900454322 /* MADPostViewController.m */; };
 		061A9CE018E3C7B4005F5440 /* MADPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 061A9CDF18E3C7B4005F5440 /* MADPost.m */; };
 		0641215318E5B45C00FEEF36 /* MADMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0641215218E5B45C00FEEF36 /* MADMainViewController.m */; };
 		DDD282F018E25B7A0095EA8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD282EF18E25B7A0095EA8E /* Foundation.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		060862B718F0933900454322 /* MADPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADPostViewController.h; path = MADdit/MADPostViewController.h; sourceTree = "<group>"; };
+		060862B818F0933900454322 /* MADPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADPostViewController.m; path = MADdit/MADPostViewController.m; sourceTree = "<group>"; };
 		061A9CDE18E3C7B4005F5440 /* MADPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADPost.h; path = MADdit/MADPost.h; sourceTree = "<group>"; };
 		061A9CDF18E3C7B4005F5440 /* MADPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADPost.m; path = MADdit/MADPost.m; sourceTree = "<group>"; };
 		0641215118E5B45C00FEEF36 /* MADMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADMainViewController.h; path = MADdit/MADMainViewController.h; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 			children = (
 				0641215118E5B45C00FEEF36 /* MADMainViewController.h */,
 				0641215218E5B45C00FEEF36 /* MADMainViewController.m */,
+				060862B718F0933900454322 /* MADPostViewController.h */,
+				060862B818F0933900454322 /* MADPostViewController.m */,
 			);
 			name = ViewControllers;
 			path = ..;
@@ -269,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDD282FC18E25B7A0095EA8E /* main.m in Sources */,
+				060862B918F0933900454322 /* MADPostViewController.m in Sources */,
 				DDD2830018E25B7A0095EA8E /* MADAppDelegate.m in Sources */,
 				061A9CE018E3C7B4005F5440 /* MADPost.m in Sources */,
 				0641215318E5B45C00FEEF36 /* MADMainViewController.m in Sources */,
