@@ -39,7 +39,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.textView = [[UITextView alloc]initWithFrame:CGRectMake(0, 60, 320, CGRectGetHeight(self.view.bounds))];
     self.textView.text = self.post.text;
+    [self.view addSubview:self.textView];
 }
 
 - (void)didReceiveMemoryWarning
