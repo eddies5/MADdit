@@ -15,7 +15,7 @@
 @property (strong, nonatomic) UITableView *table;
 @property (strong, nonatomic) UITextField *textField;
 @property (strong, nonatomic) NSMutableArray *madditPosts;
-@property (strong, nonatomic) UINavigationController* navigationController;
+@property (strong, nonatomic) UINavigationController *navigationController;
 
 @end
 
@@ -98,7 +98,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%ld", (long)indexPath.row);
     [self.navigationController pushViewController:[[MADPostViewController alloc]initWithMADPost:self.madditPosts[indexPath.row]] animated:YES];
 }
 
