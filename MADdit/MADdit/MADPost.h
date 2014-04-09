@@ -10,12 +10,13 @@
 
 @interface MADPost : NSObject
 
-@property (strong, nonatomic) NSString* title;
-@property (strong, nonatomic) NSString* subReddit;
-@property (strong, nonatomic) NSString* author;
-@property (strong, nonatomic) NSString* text;
-@property (strong, nonatomic) NSURL* url;
+@property (strong, nonatomic) NSString *title;
+@property (strong, nonatomic) NSString *subReddit;
+@property (strong, nonatomic) NSString *author;
+@property (strong, nonatomic) NSString *text;
+@property (strong, nonatomic) NSURL *url;
 @property (nonatomic) NSInteger score;
+@property (strong, nonatomic) UIImage *thumbnail;
 
 - (id)initWithData:(NSDictionary *)data;
 

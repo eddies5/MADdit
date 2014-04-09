@@ -86,6 +86,7 @@
     MADPost *post = self.madditPosts[indexPath.row];
     cell.textLabel.text = post.title;
     cell.detailTextLabel.text = post.subReddit;
+    cell.imageView.image = [(MADPost *)self.madditPosts[indexPath.row] thumbnail];
     return cell;
 }
 

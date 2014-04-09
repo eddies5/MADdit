@@ -17,8 +17,25 @@
     self.subReddit = data[@"data"][@"subreddit"];
     self.author = data[@"data"][@"author"];
     self.text = data[@"data"][@"selftext"];
-    self.url = [NSURL URLWithString:data[@"url"]];
-    self.score = (NSInteger) data[@"score"];
+    self.url = [NSURL URLWithString:data[@"data"][@"url"]];
+    self.score = (NSInteger) data[@"data"][@"score"];
+    
+    // make thumbnail request
+    if (![(NSString *)data[@"data"][@"thumbnail"] isEqualToString:@"self"]) {
+        NSString *urlString = [NSString stringWithFormat:@"%@", data[@"data"][@"thumbnail"]];
+        NSURL *url = [NSURL URLWithString:urlString];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        NSURLResponse *response = nil;
+        NSError *error = nil;
+        
+        NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+        if (data == nil) {
+            NSLog(@"%@", error);
+        }
+        
+        self.thumbnail = [[UIImage alloc] initWithData:data];
+    }
+    
     return self;
 }
 
