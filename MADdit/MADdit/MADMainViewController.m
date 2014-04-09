@@ -15,7 +15,6 @@
 @property (strong, nonatomic) UITableView *table;
 @property (strong, nonatomic) UITextField *textField;
 @property (strong, nonatomic) NSMutableArray *madditPosts;
-@property (strong, nonatomic) UINavigationController *navigationController;
 
 @end
 
@@ -33,7 +32,6 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    NSLog(@"touchesBegan");
     [self.textField resignFirstResponder];
 }
 
@@ -105,20 +103,17 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIViewController *root = [[UIViewController alloc]init];
-    self.navigationController = [[UINavigationController alloc]initWithRootViewController:root];
-    [self.view addSubview:self.navigationController.view];
     
     self.table = [[UITableView alloc]initWithFrame:CGRectMake(0, 100, 320, CGRectGetHeight(self.view.bounds)) style:UITableViewStylePlain];
     self.table.dataSource = self;
     self.table.delegate = self;
-    [root.view addSubview:self.table];
+    [self.view addSubview:self.table];
     
     self.textField = [[UITextField alloc]initWithFrame:CGRectMake(20, 70, 280, 50)];
     self.textField.placeholder = @"Subreddit Search";
     self.textField.borderStyle = UITextBorderStyleRoundedRect;
     self.textField.delegate = self;
-    [root.view addSubview:self.textField];
+    [self.view addSubview:self.textField];
 }
 
 - (void)didReceiveMemoryWarning
