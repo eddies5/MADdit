@@ -84,6 +84,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"MadditCell"];
     }
     MADPost *post = self.madditPosts[indexPath.row];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = post.title;
     cell.detailTextLabel.text = post.subReddit;
     cell.imageView.image = [(MADPost *)self.madditPosts[indexPath.row] thumbnail];
@@ -105,12 +106,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.table = [[UITableView alloc]initWithFrame:CGRectMake(0, 100, 320, CGRectGetHeight(self.view.bounds)) style:UITableViewStylePlain];
+    self.table = [[UITableView alloc]initWithFrame:CGRectMake(0, 100, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds))
+                                             style:UITableViewStylePlain];
     self.table.dataSource = self;
     self.table.delegate = self;
     [self.view addSubview:self.table];
     
-    self.textField = [[UITextField alloc]initWithFrame:CGRectMake(20, 70, 280, 50)];
+    self.textField = [[UITextField alloc]initWithFrame:CGRectMake(0, 70, CGRectGetWidth(self.view.bounds), 50)];
     self.textField.placeholder = @"Subreddit Search";
     self.textField.borderStyle = UITextBorderStyleRoundedRect;
     self.textField.delegate = self;
