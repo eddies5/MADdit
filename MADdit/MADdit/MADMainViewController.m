@@ -61,7 +61,7 @@
     
     //parse jsonData
     for (NSDictionary *d in [[jsonData objectForKey:@"data"] objectForKey:@"children"]) {
-        [self.madditPosts addObject:[[MADPost alloc]initWithData:d]];
+        [self.madditPosts addObject:[[MADPost alloc]initWithData:d[@"data"]]];
     }
     
 //    for (MADPost *p in self.madditPosts) {
