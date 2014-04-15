@@ -42,6 +42,8 @@
     self.textView = [[UITextView alloc]initWithFrame:CGRectMake(0, 60, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds))];
     self.textView.text = self.post.text;
     [self.view addSubview:self.textView];
+    
+    self.navigationItem.title = self.post.subReddit;
 }
 
 - (void)didReceiveMemoryWarning

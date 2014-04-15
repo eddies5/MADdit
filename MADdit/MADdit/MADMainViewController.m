@@ -117,6 +117,8 @@
     self.textField.borderStyle = UITextBorderStyleRoundedRect;
     self.textField.delegate = self;
     [self.view addSubview:self.textField];
+    
+    self.navigationItem.title = @"Maddit";
 }
 
 - (void)didReceiveMemoryWarning
